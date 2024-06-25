@@ -1,0 +1,12 @@
+{
+  "repository": {
+    "full_name": "riprasad/hydra-github-umb-bridge",
+    "private": false,
+    "html_url": "https://github.com/riprasad/hydra-github-umb-bridge"
+  },
+  "custom": {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+  }
+}
