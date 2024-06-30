@@ -34,7 +34,7 @@ def send_post_request(url, payload, signature):
 def main():
     try:
         url = "https://api.enterprise.redhat.com/hydra/umb-bridge/v1/publish"
-        payload = read_payload_from_file('payload1.json')
+        payload = read_payload_from_file('payload.json')
         secret_token = os.getenv('SECRET_TOKEN')  # Retrieve secret token from environment variable
         if secret_token is None:
             raise ValueError("Secret token not found in environment variables.")
@@ -47,6 +47,7 @@ def main():
             print("Request Successful!")
         else:
             print("Request Failed!")
+
         print("Response Status Code:", response.status_code)
         print("Response Body:", response.text)
             
